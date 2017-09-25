@@ -1,0 +1,9 @@
+<b>Buscador:</b> <input [(ngModel)]="busqueda" (ngModelChange)="onBusqueda()"/>
+<button (click)="onCallback()">Buscar</button>
+
+<ul class="container">
+  <cat-fila *ngFor="let element of elements"
+      [element]="element"
+      (delete)="onDelete(element)">
+  </cat-fila>
+</ul>

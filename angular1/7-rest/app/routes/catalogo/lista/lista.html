@@ -1,0 +1,6 @@
+<b>Buscador:</b> <input ng-model="$ctrl.busqueda" />
+<button ng-click="$ctrl.callback()">Buscar</button>
+
+<div ng-if="elementos" ng-repeat="elemento in elementos">
+    {{elemento.titulo}} | {{elemento.autor}}
+</div>
